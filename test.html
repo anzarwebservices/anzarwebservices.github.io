@@ -1,38 +1,54 @@
-<html>
-  <head>
+
+
+    <!DOCTYPE html>
+
+    <html lang="en">
+
+    <head>
+
+    <meta charset="utf-8">
+
+    <title>JavaScript Auto Adjust iFrame Height Based on Content</title>
+
     <style>
-      /* unvisited link */
-a:link {
-  color: red;
-}
 
-/* visited link */
-a:visited {
-  color: green;
-}
+        iframe{
 
-/* mouse over link */
-a:hover {
-  color: hotpink;
-}
+            width: 100%;
 
-/* selected link */
-a:active {
-  color: blue;
-}
+            border: 2px solid #ccc;
+
+        }
+
     </style>
-    <title>
-      burh
-    </title>
-  </head>
-  <body>
-    <table>
-      <tr>
-        <a href = "our_work.html" target = testing>
-          Our Work
-        </a>
-      </tr>
-    </table>
-    <iframe src = "about_me.html" name = testing></iframe>
-  </body>
-</html>
+
+    </head>
+
+    <body>
+
+        <iframe src="about_us.html" id="myIframe"></iframe>
+
+        
+
+        <script>
+
+        // Selecting the iframe element
+
+        var iframe = document.getElementById("myIframe");
+
+        
+
+        // Adjusting the iframe height onload event
+
+        iframe.onload = function(){
+
+            iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
+
+        }
+
+        </script>
+
+    </body>
+
+    </html>
+
