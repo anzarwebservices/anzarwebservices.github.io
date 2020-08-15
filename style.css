@@ -1,0 +1,43 @@
+iframe{
+
+    width: 99%;
+
+    border: 2px solid #ccc;
+
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* color of bar next to menu tabs */
+.topnav {
+  overflow: hidden;
+  background-color: rgb(143, 136, 136)
+}
+
+/* changes color of link text */
+
+.topnav a {
+  float: left;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+
+.topnav a:hover {
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+
+/* color of menu tabs when clicked*/
+
+.topnav a:active {
+  background-color: rgb(32, 33, 114)
+  color: white;
+}
+body {
+    background-color: lightgray;
+}

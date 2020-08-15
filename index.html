@@ -1,80 +1,191 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet"> 
+<title>Anzar Web Services</title>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel = "icon" href = "images/favicon.ico" type = 'image/x-icon'>
 <style>
-iframe{
-
-    width: 99%;
-
-    border: 2px solid #ccc;
-
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+html {
+    scroll-behavior: smooth;
 }
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
-/* color of bar next to menu tabs */
-.topnav {
-  overflow: hidden;
-  background-color: rgb(143, 136, 136)
-}
-
-/* changes color of link text */
-
-.topnav a {
-  float: left;
-  color: #ffffff;
-  text-align: center;
-  padding: 14px 16px;
-  font-size: 17px;
-}
-
-/* Change the color of links on hover */
-
-.topnav a:hover {
-  background-color: rgb(255, 255, 255);
-  color: black;
-}
-
-/* color of menu tabs when clicked*/
-
-.topnav a:active {
-  background-color: rgb(32, 33, 114)
-  color: white;
-} 
 </style>
-<title>
-  Anzar Web Services
-</title> 
-</head>
-<body style = "background-color: darkgray;">
-  <center>
-    <iframe src = "header.html" height = 200></iframe>
-    </center>
-    <hr>
-        <div class="topnav">
-          <p style = "font-family: Varela Round; sans-serif; font-size: 1px">
-          <a class="active" href = about_us.html target = "main">
-              About Us
-            </a>
-          <a class = "active" href = our_work.html target = "main">
-              Our Work
-          </a>
-          <a class = "active" href = reviews.html target = "main">
-              Reviews
-          </a>
-          <a class = "active" href = pricing.html target = "main">
-              Pricing
-          </a>
-          <a class = "active" href = contact_us.html target = "main">
-              Contact Us
-          </a>
-          </p>
+<body class="w3-black">
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  <img src="images/logo.png" style="width:100%">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>ABOUT</p>
+  </a>
+  <a href = "#prices" class = "w3-bar-item w3-button w3-padding-large w3-hover-black">
+      <i class = "fa fa-dollar w3-xxlarge"></i>
+      <p>PRICES</p>
+  </a>
+  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-eye w3-xxlarge"></i>
+    <p>PHOTOS</p>
+  </a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>CONTACT</p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> Syed Anzar.</h1>
+    <p>Web Designer.</p>
+    <img src="images/logo.png" alt="logo" class="w3-image" width="992" height="1108">
+  </header>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-light-grey">My Name</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p>
+      I develop websites as a freelance career. With plenty of experience in HTML, CSS, and JavaScript (and always willing to learn more), you can be confident that you will get quality
+      web development whenever you work with me. I have worked with companies, schools, and even individuals, and so am able to communicate effectively with any type of client. You can
+      rest assured that all your needs will be heard and met.
+    </p>
+    <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
+    <hr style = "width: 200px" class = "w3-opacity">
+    <p class="w3-wide">HTML</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:95%"></div>
+    </div>
+    <p class="w3-wide">CSS</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:85%"></div>
+    </div>
+    <p class="w3-wide">JavaScript</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:75%"></div>
+    </div><br>
+    
+    <!-- Grid for pricing tables -->
+    <div id = "prices">
+        <h3 class="w3-padding-16 w3-text-light-grey">My Prices</h3>
+        <hr style = "width: 200px" class = "w3-opacity">
+        <div class="w3-row-padding" style="margin:0 -16px">
+        <div class="w3-half w3-margin-bottom">
+            <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+            <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic</li>
+            <li class="w3-padding-16">✔ Quality Web Design and Development</li>
+             <li class="w3-padding-16">✔ Free Bug Fixing</li>
+            <li class="w3-padding-16">✘ Lifetime Support For Any Issues You May Face</li>
+            <li class="w3-padding-16">✘ Help In Getting Your Website Up and Running For The World To See </li>
+            <li class="w3-padding-16">
+             <h2>450sar*</h2>
+             </li>
+             <li class="w3-light-grey w3-padding-24">
+              <button class="w3-button w3-white w3-padding-large w3-hover-black" onclick = "window.location.href='#contact';">Contact Me</button>
+            </li>
+         </ul>
+         </div>
+
+        <div class="w3-half">
+         <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+            <li class="w3-dark-grey w3-xlarge w3-padding-32">Pro</li>
+             <li class="w3-padding-16">✔ Quality Web Design and Development</li>
+            <li class="w3-padding-16">✔ Free Bug Fixing</li>
+            <li class="w3-padding-16">✔ Lifetime Support For Any Issues You May Face</li>
+             <li class="w3-padding-16">✔ Help In Getting Your Website Up and Running For The World To See</li>
+            <li class="w3-padding-16">
+                <h2>600sar*</h2>
+             </li>
+            <li class="w3-light-grey w3-padding-24">
+                <button class="w3-button w3-white w3-padding-large w3-hover-black" onclick = "window.location.href='#contact';">Contact Me</button>
+            </li>
+         </ul>
         </div>
-        <hr>
-        <iframe name = "main" src="about_us.html" frameborder="0" style="overflow: hidden; height: 100%; width: 99%; position: absolute;"></iframe>
-</script>
-</body>    
+    </div>
+    <!-- End Grid/Pricing tables -->
+    </div>
+    
+    <!-- Testimonials -->
+    <h3 class="w3-padding-24 w3-text-light-grey">My Reputation</h3> 
+    <hr style = "width: 200px" class = "w3-opacity"> 
+    <img src="images/ris_logo.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-large w3-margin-right">Academic Co-ordinator, </span> Rainbow International School, Riyadh (KG).</p>
+    <p><i>"Honestly, very rarely I write a review with my opinion or experience but now I have the intention to help people who want to be successful in the online business, first you
+        need to know what you want, second how do you want it to look (your project) and what effect you want to achieve in the market, and thirdly save time and money and hire Anzar
+        Web Services. After searching and dealing with different designers and developers without success, I finally found Anzar Web Services and they put color, flavor and efficiency
+        to my project. We are working together for various designs such as logos, labels, web pages and we are currently optimizing our main website. If you need a team working with you
+        from A to Z, Anzar Web Services is the company. Thanks to all the team for the support."</i></p>
+  <!-- End About Section -->
+  </div>
+  
+  <!-- Portfolio Section -->
+  <div class="w3-padding-64 w3-content" id="photos">
+    <h2 class="w3-text-light-grey">My Work</h2>
+    <hr style="width:200px" class="w3-opacity">
+<center>
+    <a href = "https://rainbowinternationalschoolkg.000webhostapp.com" target = "blank">
+        <img src = "images/ris_kg.png">
+        <br>
+        Rainbow International School KG
+    </a>
+</center>
+    </div>
+  <!-- End Portfolio Section -->
+</div>
+
+<div class = "w3-padding-64 w3-content w3-text-grey" id = "limitations">
+    <h2 class = "w3-text-light-grey">My Limitations</h2>
+    <hr style = "width: 200px" class = "w3-opacity">
+    <p>
+        Nothing in life is perfect, and neither am I. There are some projects which are just too large for me to handle.
+        <li>Any non-static web-pages (ones that need to be regularly updated by a third party)</li>
+        <li>An accounts system (e-mail accounts registered on the domain will be provided by the registrar)</li>
+        <li>Web apps/games</li>
+        <li>Blogs</li>
+    </p>
+</div>
+
+  <!-- Contact Section -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-light-grey">Contact Me</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Riyadh, KSA</p>
+      <p><i class="fa fa-whatsapp fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> WhatsApp: 054 491 8541</p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: syed.anzar234@gmail.com</p>
+    </div><br>
+  <!-- End Contact Section -->
+  </div>
+
+<!-- END PAGE CONTENT -->
+</div>
+
+</body>
 </html>
